@@ -4,10 +4,20 @@ Fond du bouton "main en beige (dde clt) voir si à généraliser siur les autres
 
 */
 
+
 .logo_tasses {
-size: 2rem;
+display: block;
+height: 2 rem;
+
+
 }
 
 .h2 {
 
-};
+}
+
+h3 {
+    background-color: antiquewhite;
+}
+
+
