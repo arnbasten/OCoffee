@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+    actor "visitor" as c1
+    actor "user" as c2
+    actor "admin" as a1
+    
+package "store" {
+    usecase "avoir accès à la page d'accueil" as UC1
+    usecase "avoir accès à la page catalogue" as UC2
+    usecase "avoir accès aux pages détails d'un produit" as UC3
+    usecase "avoir accès à la page de tout les produits" as UC4
+
+    usecase "pouvoir se connecter er déconnecter de son compte" as UC5
+    usecase "avoir accès à la page panier" as UC6
+    usecase "pouvoir ajouter et supprimer des poduits dans son panier" as UC7
+    usecase "voir l'incrémentation du prix total dans le panier selon les prduits ajoutés ainsi que leur quantité" as UC8
+}
+UC1 <-- c1
+UC2 <-- c1
+UC3 <-- c1
+UC4 <-- c1
+
+c2 --> UC1
+c2 --> UC2
+c2 --> UC3
+c2 --> UC4
+c2 --> UC5
+c2 --> UC6
+c2 --> UC7
+c2 --> UC8
+    
+package "managment" {
+    usecase "pouvoir ajouter et supprimer des produits sur le site" as UC9
+    usecase "pouvoir modifier le prix des produits" as UC10
+
+}
+a1 --> UC9 
+a1 --> UC10
+@enduml

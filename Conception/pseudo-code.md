@@ -1,5 +1,5 @@
 # conception
--[ ] users stories -> .md
+-[x] users stories -> .md
 -[ ] user case -> .uml
 -[ ] wireframe -> draw.io
 -[ ] MCD -> draw.io
