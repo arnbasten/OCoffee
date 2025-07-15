@@ -2,7 +2,7 @@
 -[x] users stories -> .md
 -[x] user case -> .uml
 -[x] wireframe -> whimsical
--[ ] ajouter au wireframe la page "tout les cafés"
+-[x] ajouter au wireframe la page "tout les cafés"
 -[x] MCD -> draw.io
 -[x] MLD -> draw.io
 -[x] cahier des charges -> Manuscrit via projet, mail clt, schéma clt
@@ -20,7 +20,7 @@ menu hamburger
 
 -[ ] install des dépendances utiles pour le projet
 -[ ] reprendre le code html et css des 4 pages pricicipales en dur. accueil, catalogue, détail d'un café et tout les cafés.
--[ ] refacotrer l'arborescence  en MVP 
+-[x] refacotrer l'arborescence  en MVP 
 -[ ] reprendre lien API/sql et BD + le code - avancer par feature de bout en bout et en dynamisant au fur et à mesure.
 -[ ]
 -[ ]
