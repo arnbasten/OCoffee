@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px) {
+    .all_products ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .all_products ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.all_products{
+    gap: 2rem;
+    padding: 2rem;
+
+
+}
+.all_products ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.all_products li{
+    border-radius: 0.5rem;
+    overflow: hidden;
+  
+}
+
+.all_products img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    
+}
