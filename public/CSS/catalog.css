@@ -1,77 +1,27 @@
-/*body{
-    background-color: beige;
-}
-
-.logo{
-width: 20%;
-height: 20%;
-}
-
-.navlinks a{
-    font-size: large;
-}
-
-#navbar{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
-}
-
-.brand{
-display: flex;
-align-items: center;
-gap: 30px;
-}
-
-.navlinks{
-display: flex;
-gap: 20px;
-}*/
-
-/* ======== About Section ======== */
-
-.about {
+.catalog_container{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.about img {
-    border-radius: 0.7rem;
-    object-fit: cover;
-    width: 100%;
-    max-width: 650px;
+.catalog_container h2 {
+    position: absolute;
+    text-align: center; 
+    background-color: black;
+    text-transform: uppercase;
+    padding: 0.5em;
+    border-radius: 25%;
 }
 
-@media screen and (max-width: 1280px) {
-    .about img {
-        display: none;
-    }
+.catalog_container img {
+    width: 50%;
+    margin: 1em;
+    border-radius: 10%;
 }
-
-.about h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.about p {
-    line-height: 1.5rem;
-    margin: 3rem 0;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    text-align: justify;
-}
-
-.about a {
-    width: fit-content;
-}
-
-.about_container {
-    display: flex;
-}
-
 /* ======== Latest Products Section ======== */
+
+/*latest-product  à modifier en random-products lors de la dynamisation*/
 
 .latest-products ul {
     display: flex;
