@@ -64,3 +64,9 @@
 .latest-products article a {
     margin-top: 1rem;
 }
+
+.button{
+    display: block;
+    margin-left: 0;
+    margin-right: 30em;
+}

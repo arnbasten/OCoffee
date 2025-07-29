@@ -6,7 +6,19 @@
    }
 
    .details_container {
-    margin-left: 20em;
+      display: block;
+      margin: 15em;
+      border: 2px solid black;
+      padding: 3rem;
    }
+   .details_container dl{
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      row-gap: 0.5rem;
+      column-gap: 0.5rem;
+      align-items: flex-start;
+   }
+  
+  
 
    
