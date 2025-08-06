@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- include common head -->
+    <%- include('../partials/head')%>
+    
+    <!--css home-->
+    <link rel="stylesheet" href="../CSS/catalog.css">
+</head>
+<body>
+    <!-- include common header -->
+     <%- include('../partials/header')%>
+    <main>
+  <div class="catalog_container">
+    <h2>notre catalogue</h2>
+    <img src="../contenu_clt _images_textes/00.assets/coffees/958090105.png" alt="gaines de café">
+  </div>
+<!--latest-product  à modifier en random-products lors de la dynamisation-->
+          <section class="latest-products">
+      <h2>Nos cafés</h2>
+        <ul>
+            <% articles.forEach(product => { %>
+          <li>
+            <article>
+              <img src="<%= product.image_path %>" alt="<%= product.origin_name %>">
+              <div>
+                <h3><%= product.origin_name %></h3>
+                <a class="button-outline" href="/article/">Voir le détail</a>
+              </div>
+            </article> 
+          </li>
+          <% }); %>
+        </ul>
+    </section>
+    <a class="button" href="/all_products">voir tout nos cafés</a>
+    </main>
+
+    <!-- include common footer -->
+     <%- include('../partials/footer')%>
+
+    </body>
+</html>
