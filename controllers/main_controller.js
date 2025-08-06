@@ -1,4 +1,4 @@
-import datamapper from "../main_datamapper.js";
+import datamapper from "../database/main_datamapper.js";
 
 const mainController = {
     async renderHomePage(req, res) {

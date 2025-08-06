@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import routes from './routes.js';
 
 
 const app = express();
@@ -12,5 +13,5 @@ app.use(routes);
 
 const PORT= process.env.PORT || 4000;
 app.listen(PORT, () => {
-    console.log(`démarrage de app ocoffee sur https://localhost:${PORT}`);
+    console.log(`démarrage de app ocoffee sur http://localhost:${PORT}`);
 });
