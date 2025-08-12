@@ -18,6 +18,7 @@ CREATE TABLE category(
 
 CREATE TABLE product (
     id INT PRIMARY KEY NOT NULL UNIQUE,
+    name VARCHAR(64) NOT NULL,
     description TEXT NOT NULL,
     reference VARCHAR(64) NOT NULL,
     price_per_kg DECIMAL NOT NULL,
