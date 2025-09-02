@@ -24,33 +24,17 @@
     <section class="latest-products">
       <h2>Nouveautés</h2>
         <ul>
+          <% articles.forEach(product => { %>
           <li>
             <article>
-              <img src="../contenu_clt _images_textes/00.assets/coffees/100955890.png" alt="Espresso">
+              <img src="<%= encodeURI(product.image_path) %>" alt="<%= product.name %>"
               <div>
-                <h3>Espresso</h3>
+                <h3><%= product.name %></h3>
                 <a class="button-outline" href="/article/">Voir le détail</a>
               </div>
             </article> 
           </li>
-          <li>
-            <article>
-              <img src="../contenu_clt _images_textes/00.assets/coffees/100955894.png" alt="Columbian">
-              <div>
-                <h3>Columbian</h3>
-                <a class="button-outline" href="/article/">Voir le détail</a>
-              </div>
-            </article>
-          </li> 
-          <li>
-            <article>
-              <img src="../contenu_clt _images_textes/00.assets/coffees/105589090.png" alt="Ethiopian Yirgacheffe">
-              <div>
-                <h3>Ethiopian Yirgacheffe</h3>
-                <a class="button-outline" href="/article/">Voir le détail</a>
-              </div>
-            </article> 
-          </li>
+          <% }) %>
         </ul>
     </section>
 
