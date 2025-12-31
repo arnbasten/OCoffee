@@ -18,6 +18,7 @@ const datamapper = {
         ORDER BY RANDOM()
         LIMIT 3;
             `);
+            
     const products = result.rows;
     return products;
     },

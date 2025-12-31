@@ -22,7 +22,7 @@
             <% articles.forEach(product => { %>
           <li>
             <article>
-              <img src="<%= product.image_path %>" alt="<%= product.origin_name %>">
+              <img src="<%= encodeURI(product.image_path) %>" alt="<%= product.origin_name %>">
               <div>
                 <h3><%= product.origin_name %></h3>
                 <a class="button-outline" href="/article/">Voir le détail</a>
